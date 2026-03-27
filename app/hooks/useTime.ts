@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function useTime() {
-  const [date, setDate] = useState<string | null>("");
+  const [date, setDate] = useState<string | null>(null);
   const options: Intl.DateTimeFormatOptions = {
     weekday: "short",
     month: "short",
